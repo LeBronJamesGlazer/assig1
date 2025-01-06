@@ -1,3 +1,5 @@
+package models;
+
 public class Person {
     private String name;
     private String surname;
@@ -10,7 +12,7 @@ public class Person {
         this.age = age;
         this.gender = gender;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -18,7 +20,6 @@ public class Person {
     public String getSurname() {
         return surname;
     }
-
 
     @Override
     public String toString() {
