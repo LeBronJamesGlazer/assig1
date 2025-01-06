@@ -1,3 +1,5 @@
+package models;
+
 public class Teacher extends Person {
     private String subject;
     private int yearsOfExperience;
@@ -11,21 +13,15 @@ public class Teacher extends Person {
     }
 
     public void giveRaise(double percentage) {
-        if (percentage > 0) {
-            salary += salary * percentage / 100;
-        }
+        salary += salary * percentage / 100;
+    }
+
+    public int getSalary() {
+        return salary;
     }
 
     @Override
     public String toString() {
         return super.toString() + " I teach " + subject + ".";
-    }
-
-    public int getYearsOfExperience() {
-        return yearsOfExperience;
-    }
-
-    public int getSalary() {
-        return salary;
     }
 }
