@@ -10,6 +10,15 @@ public class Person {
         this.age = age;
         this.gender = gender;
     }
+    
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
 
     @Override
     public String toString() {
